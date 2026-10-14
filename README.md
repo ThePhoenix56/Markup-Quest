@@ -1,12 +1,4 @@
-# Laboration 3 – Skriv en applikation med din och en annan students modul
-
-Det här är ditt privata GitLab-repo för kursens tredje laborationsuppgift.
-
-Fullständig uppgiftsbeskrivning, deadline, bedömningskriterier och regler finns på
-[kurssidan för Laboration 3](https://coursepress.lnu.se/kurser/introduktion-till-mjukvarukvalitet/examinationsuppgifter/laboration-3/).
-Det här repot är bara din arbetsyta för inlämningen och innehåller varken din applikations eller
-dina modulers kod. Applikationen ska versionshanteras i ett eget, publikt repo på GitHub, separat
-från modulernas repon.
+# Markup Quest - the interactive story engine application that brings HTML stories to life!
 
 ## Kom igång
 
