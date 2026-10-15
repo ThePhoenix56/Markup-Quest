@@ -1,0 +1,51 @@
+<story title="The Mausoleum" start="gate">
+    <room id="gate" title="The Mausoleum Entrance">
+        <description>
+            You stand before the grand entrance of the mausoleum. The entrance is old and worn down, with cracked stone bricks and a few loose stone plates covering the ground to the entrance.
+        </description>
+        <choice event="enter" target="hallway">
+            Push open the gate
+        </choice>
+    </room>
+    <room id="hallway" title="The Mausoleum Hallway">
+        <description>
+            You enter the mausoleum and find yourself in a long hallway, dimly lit by the sunshine from outside. The walls are lined with ancient stone carvings, and the air is thick with dust. The hallway stretches out before you, leading to a set of stairs at the end leading to a large chamber.
+        </description>
+        <choice event="explore" target="chamber">
+            Walk down the hallway
+        </choice>
+        <choice event="exit" target="gate">
+            Go back to the entrance
+        </choice>
+    </room>
+    <room id="chamber" title="The Mausoleum Chamber">
+        <description>
+            You walk down the hallway, down the stairs and enter the large chamber. The chamber is filled with ancient tombs and chests, each one adorned with intricate carvings and inscriptions. The air is heavy with the scent of decay, and you can hear the faint sound of dripping water echoing through the chamber.
+        </description>
+        <choice event="explore" target="tomb">
+            Explore the tombs
+        </choice>
+        <choice event="exit" target="hallway">
+            Go back to the hallway
+        </choice>
+    </room>
+    <room id="tomb" title="The Mausoleum Tomb">
+        <description>
+            You approach one of the tombs and find that it is sealed shut. The carvings on the tomb are intricate and detailed, depicting scenes of ancient rituals and ceremonies. You can feel a sense of unease as you stand before the tomb, as if something is watching you from within.
+        </description>
+        <choice event="open" target="treasure">
+            Attempt to open the tomb
+        </choice>
+        <choice event="exit" target="chamber">
+            Go back to the chamber
+        </choice>
+    </room>
+    <room id="treasure" title="The Mausoleum Treasure">
+        <description>
+            You manage to open the tomb and find a treasure trove of ancient artifacts and treasures. The tomb is filled with gold, a dagger, and a mysterious helmet. You can feel a sense of awe and wonder as you gaze upon the treasures before you.
+        </description>
+        <choice event="exit" target="tomb">
+            Go back to the tomb
+        </choice>
+    </room>
+</story>
