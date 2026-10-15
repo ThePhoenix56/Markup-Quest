@@ -1,0 +1,25 @@
+{
+  "name": "markup-quest",
+  "version": "1.0.0",
+  "description": "A simple web-based game that utilizes two JavaScript modules",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThePhoenix56/Markup-Quest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ThePhoenix56/Markup-Quest/issues"
+  },
+  "homepage": "https://github.com/ThePhoenix56/Markup-Quest#readme",
+  "dependencies": {
+    "vite": "^8.3.4"
+  }
+}
