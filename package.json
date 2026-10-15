@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/ThePhoenix56/Markup-Quest#readme",
   "dependencies": {
+    "flowstate-js": "github:Abbas288/flowstate-js",
+    "html_parser": "github:ThePhoenix56/HTML_Parser",
     "vite": "^8.3.4"
   }
 }
