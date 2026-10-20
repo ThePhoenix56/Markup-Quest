@@ -2,10 +2,12 @@
   "name": "markup-quest",
   "version": "1.0.0",
   "description": "A simple web-based game that utilizes two JavaScript modules",
-  "main": "./src/index.js",
   "scripts": {
     "start": "vite",
-    "build": "vite build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run"
   },
   "repository": {
     "type": "git",

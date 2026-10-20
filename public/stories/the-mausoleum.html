@@ -25,22 +25,34 @@
         <choice event="explore" target="tomb">
             Explore the tombs
         </choice>
+        <choice event="search" target="chests">
+            Search the chests along the wall
+        </choice>
         <choice event="exit" target="hallway">
             Go back to the hallway
+        </choice>
+    </room>
+    <room id="chests" title="The Mausoleum Chests">
+        <description>
+            You kneel among the old chests. Most of them are empty or filled with rotten cloth, but beneath a broken lid lies a rusty crowbar, still solid enough to use.
+        </description>
+        <item name="crowbar">A rusty crowbar</item>
+        <choice event="exit" target="chamber">
+            Go back to the chamber
         </choice>
     </room>
     <room id="tomb" title="The Mausoleum Tomb">
         <description>
             You approach one of the tombs and find that it is sealed shut. The carvings on the tomb are intricate and detailed, depicting scenes of ancient rituals and ceremonies. You can feel a sense of unease as you stand before the tomb, as if something is watching you from within.
         </description>
-        <choice event="open" target="treasure">
+        <choice event="open" target="treasure" requires="crowbar" locked="The stone lid will not move with bare hands. Something to pry it open would help.">
             Attempt to open the tomb
         </choice>
         <choice event="exit" target="chamber">
             Go back to the chamber
         </choice>
     </room>
-    <room id="treasure" title="The Mausoleum Treasure">
+    <room id="treasure" title="The Mausoleum Treasure" ending="true">
         <description>
             You manage to open the tomb and find a treasure trove of ancient artifacts and treasures. The tomb is filled with gold, a dagger, and a mysterious helmet. You can feel a sense of awe and wonder as you gaze upon the treasures before you.
         </description>

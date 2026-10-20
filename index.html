@@ -8,11 +8,25 @@
 </head>
 <body>
     <main id="game">
-        <h1 id="room-title"></h1>
-        <p id="room-description"></p>
-        <p id="message"></p>
-        <div id="choices"></div>
+        <p id="story-title"></p>
+
+        <section id="room">
+            <h1 id="room-title">Loading story…</h1>
+            <p id="room-description"></p>
+        </section>
+
+        <p id="message" aria-live="polite"></p>
+
+        <nav id="choices" aria-label="Choices"></nav>
+
+        <button id="restart" type="button" hidden>Start over</button>
+
+        <aside id="inventory-panel">
+            <h2>Inventory</h2>
+            <ul id="inventory"></ul>
+        </aside>
     </main>
+
     <script type="module" src="src/main.js"></script>
 </body>
 </html>
