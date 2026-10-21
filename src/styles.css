@@ -1,0 +1,149 @@
+/* Colors */
+:root {
+  --background: #f4efe6;
+  --surface: #fffaf2;
+  --text: #2b2620;
+  --muted: #7a6f62;
+  --accent: #7a4e2d;
+  --found: #2f6b3a;
+  --locked: #9a3a2a;
+  --border: #d9cfc0;
+}
+
+/* Darker colors for dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1b1916;
+    --surface: #25221e;
+    --text: #ece4d8;
+    --muted: #a39887;
+    --accent: #d39a68;
+    --found: #7cc28a;
+    --locked: #e38a77;
+    --border: #3a352f;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.6;
+}
+
+#game {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+#story-title {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+#room-title {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+#room-description {
+  margin: 0 0 1.5rem;
+  font-size: 1.1rem;
+}
+
+#message {
+  min-height: 1.6em;
+  margin: 0 0 1.5rem;
+  font-style: italic;
+}
+
+#message.found {
+  color: var(--found);
+}
+
+#message.locked,
+#message.error {
+  color: var(--locked);
+}
+
+#choices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+button {
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--accent);
+}
+
+button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+button.locked {
+  color: var(--muted);
+  border-style: dashed;
+}
+
+button.locked::after {
+  content: ' (locked)';
+  font-size: 0.85em;
+}
+
+#restart {
+  margin-top: 1.5rem;
+  border-color: var(--accent);
+  color: var(--accent);
+  text-align: center;
+}
+
+#restart[hidden] {
+  display: none;
+}
+
+#inventory-panel {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+#inventory-panel h2 {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+#inventory {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+#inventory .empty {
+  color: var(--muted);
+  list-style: none;
+  margin-left: -1.25rem;
+}
