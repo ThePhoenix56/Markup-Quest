@@ -1,12 +1,12 @@
 # Markup Quest - the interactive story engine application that brings HTML stories to life!
 
-<hr>
+
 Markup Quest is a browser-based game written in JavaScript for the 1DV610 Laboration 3 assignment @ LNU. It utilizes two JS modules - my own and another student's module.
 
 The game is primarily based on uploading an HTML story and being able to play it. Collect items, explore unknown rooms, and finish a story.
 
 ## Requirements
-<hr>
+
 **R1**: The app needs to load a story written in HTML markup and show the start room.
 **R2**: Each room shows its title, description and one button per choice.
 **R3**: Clicking a choice moves the player to the room it leads to.
